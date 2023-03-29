@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  min-height: 100%;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0.75rem;
+}
+
+header img {
+  max-width: 200px;
+  height: auto;
+}
+
+header nav {
+  width: 30%;
+  margin: auto 1rem;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+header nav ul a {
+  text-decoration: none;
+  color: white;
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
+}
+
+header input {
+  flex-grow: 1;
+  flex-shrink: 2;
+  max-width: 30%;
+  border-radius: 20px;
+  outline: none;
+  padding: 0.25rem 0.5rem;
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
+}
+
+#HamBurger {
+  background-color: transparent;
+  border: 0px;
+  display: none;
+}
+
+#HamBurger img {
+  width: 45px;
+  height: auto;
+}
+
+.logo-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0.5rem;
+}
+
+#Hero #myVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+#Hero-Content {
+  display: grid;
+  place-content: Center;
+  min-width: 100%;
+  min-height: 80vh;
+}
+
+#Hero-Content h2 {
+  font-size: clamp(2rem, 10vw, 4rem);
+  color: white;
+}
+
+.hidden {
+  position: absolute;
+  left: -999999px;
+}
+
+@media screen and (max-width: 686px) {
+  header {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  header img {
+    margin: 0.75rem 0;
+  }
+
+  header nav {
+    display: none;
+  }
+  header input {
+    max-width: 100%;
+    flex-shrink: 0;
+  }
+  #HamBurger {
+    display: inline;
+  }
+
+  .longNav {
+    display: block;
+    height: 100%;
+    position: absolute;
+    background-color: #333;
+    top: 0;
+    left: 0;
+    margin: 0;
+    height: 100%;
+    width: 50%;
+    padding: 1rem;
+  }
+  .longNav ul {
+    flex-flow: column nowrap;
+  }
+}
