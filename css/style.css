@@ -41,6 +41,38 @@ header nav ul a {
   font-size: clamp(1rem, 2.5vw, 1.1rem);
 }
 
+.longNav {
+  display: block;
+  position: absolute;
+  background-color: #333;
+  top: 0;
+  left: 0;
+  margin: 0;
+  height: 100%;
+  width: 50%;
+  padding: 1rem;
+}
+.longNav ul {
+  flex-flow: column nowrap;
+}
+.Cross-Logo {
+  display: none;
+}
+.longNav ul li {
+  margin: 0.5rem 0;
+  font-size: 1.3rem;
+}
+
+#Cross-Logo {
+  display: none;
+  background-color: transparent;
+  border: 0;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  margin: 0;
+}
+
 header input {
   flex-grow: 1;
   flex-shrink: 2;
@@ -57,7 +89,7 @@ header input {
   display: none;
 }
 
-#HamBurger img {
+.header-icon {
   width: 45px;
   height: auto;
 }
@@ -73,9 +105,14 @@ header input {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: -1;
   min-width: 100%;
   min-height: 100%;
-  z-index: -1;
+}
+
+#Hero #myVideo video {
+  min-width: 100%;
+  min-height: 100%;
 }
 
 #Hero-Content {
@@ -101,7 +138,7 @@ header input {
     flex-flow: column nowrap;
   }
 
-  header img {
+  header #logo {
     margin: 0.75rem 0;
   }
 
@@ -114,21 +151,5 @@ header input {
   }
   #HamBurger {
     display: inline;
-  }
-
-  .longNav {
-    display: block;
-    height: 100%;
-    position: absolute;
-    background-color: #333;
-    top: 0;
-    left: 0;
-    margin: 0;
-    height: 100%;
-    width: 50%;
-    padding: 1rem;
-  }
-  .longNav ul {
-    flex-flow: column nowrap;
   }
 }

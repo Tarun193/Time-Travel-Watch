@@ -12,7 +12,7 @@
     <header>
       <div class="logo-menu">
         <button id="HamBurger">
-          <img src="images/menu.png" alt="menu" />
+          <img src="images/menu.png" alt="menu" class="header-icon" />
         </button>
         <img
           src="images/logo.png"
@@ -20,14 +20,18 @@
           width="1000"
           height="189"
           class="Header-item"
+          id="logo"
         />
       </div>
       <nav id="Nav-Bar">
         <ul class="Header-item">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
+        <button id="Cross-Logo">
+          <img src="images/Cross.png" alt="menu" class="header-icon" />
+        </button>
       </nav>
       <input
         type="text"
@@ -40,9 +44,11 @@
     <main>
       <section id="Hero">
         <h2 class="hidden">Hero section of site</h2>
-        <video autoplay muted loop id="myVideo">
-          <source src="videos/galaxy.mp4" type="video/mp4" />
-        </video>
+        <div id="myVideo">
+          <video autoplay muted loop playsinline>
+            <source src="videos/galaxy.mp4" type="video/mp4" />
+          </video>
+        </div>
         <section id="Hero-Content">
           <h2>Break The Flow</h2>
         </section>
