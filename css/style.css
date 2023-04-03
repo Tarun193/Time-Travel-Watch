@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +8,8 @@
 html {
   font-size: 20px;
   scroll-behavior: smooth;
+  font-family: "Edu NSW ACT Foundation", cursive;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -104,7 +107,7 @@ header input {
   margin: 0 0.5rem;
 }
 
-#Hero #myVideo {
+#myVideo {
   position: fixed;
   top: 0;
   left: 0;
@@ -113,7 +116,7 @@ header input {
   min-height: 100%;
 }
 
-#Hero #myVideo video {
+#myVideo video {
   min-width: 100vw;
   min-height: 100vh;
 }
@@ -215,6 +218,97 @@ header input {
 #Story .story-content {
   font-size: clamp(16px, 2.5vw, 1.3rem);
 }
+
+/* Product Page  */
+#Product-page-product {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-flow: column nowrap;
+  min-height: 100vh;
+  width: 95%;
+  margin: 2rem auto;
+  background-color: #000000a4;
+}
+
+.Product {
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.Product img {
+  max-width: 30%;
+  height: auto;
+  margin-right: 1.5rem;
+  flex: 1;
+}
+
+.Product-Content {
+  max-width: 70%;
+  flex: 1;
+  margin: 0 1rem;
+}
+
+.Product-Content h2 {
+  font-size: clamp(1.2rem, 3.8vw, 2rem);
+}
+
+.Product-Content p {
+  margin: 1rem 0;
+  font-size: clamp(16px, 2.5vw, 1rem);
+}
+
+.Product-Content ul li {
+  font-size: clamp(16px, 2.5vw, 1rem);
+}
+.Product-operations {
+  margin: 1rem;
+}
+.Product-operations button {
+  font-size: 1rem;
+  padding: 0.25rem 0.75rem;
+  margin: 0.5rem;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  transition: all 1s 0.1s;
+}
+
+.Product-operations button:hover {
+  color: black;
+  cursor: pointer;
+  background-color: white;
+}
+
+/* reviews  Page styling*/
+#reviews {
+  width: 95%;
+  margin: 2rem auto;
+  background-color: #000000a4;
+  padding: 1rem;
+}
+#reviews h2 {
+  text-align: center;
+}
+.review {
+  border-top: 1px solid white;
+  text-align: left;
+  margin: 1rem 0;
+}
+
+.review h3,
+.review div,
+.review p {
+  margin: 0.25rem 0;
+}
+
+.review .time {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 0.7em;
+}
+
 /* Footer CSS */
 
 .footer-container {
@@ -271,15 +365,6 @@ header input {
   font-size: 0.7rem;
 }
 
-@media screen and (max-width: 400px) {
-  .newsletter {
-    flex-direction: column;
-  }
-  .newsletter span:before {
-    content: "Join Our ";
-  }
-}
-
 /* Utility Classes */
 
 .Center {
@@ -313,6 +398,27 @@ header input {
   }
   header input {
     max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  #Product-page-product {
+    align-items: center;
+  }
+  .Product {
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: 0 1rem;
+  }
+  .Product img {
+    margin: 1rem 0;
+    max-width: clamp(100%, 50%, 80%);
+  }
+  .Product-Content {
+    max-width: 100%;
+  }
+  .Product-operations button {
+    font-size: 0.8rem;
   }
 }
 
@@ -354,5 +460,14 @@ header input {
 @media (hover: none) {
   .product-price {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .newsletter {
+    flex-direction: column;
+  }
+  .newsletter span:before {
+    content: "Join Our ";
   }
 }
