@@ -237,11 +237,14 @@ header input {
   margin: 0 1rem;
 }
 
-.Product img {
+.Product .product-img {
   max-width: 30%;
-  height: auto;
   margin-right: 1.5rem;
   flex: 1;
+}
+.Product .product-img img {
+  width: 100%;
+  height: auto;
 }
 
 .Product-Content {
@@ -410,9 +413,9 @@ header input {
     align-items: center;
     margin: 0 1rem;
   }
-  .Product img {
+  .Product .product-img {
     margin: 1rem 0;
-    max-width: clamp(100%, 50%, 80%);
+    max-width: 100%;
   }
   .Product-Content {
     max-width: 100%;
