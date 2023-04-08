@@ -4,9 +4,6 @@ const Cross = document.getElementById("Cross-Logo");
 const NavLinks = document.querySelectorAll("header nav ul a");
 const nav = document.getElementById("Nav-Bar");
 
-if (nav.getAttribute("class") === "longNav") {
-  // Add an event listener to the scroll event
-}
 NavLinks.forEach((link) => {
   link.addEventListener("click", HidePhoneMenu);
 });

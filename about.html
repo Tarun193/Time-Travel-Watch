@@ -4,9 +4,111 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>TimeKeeper</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/index.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <h1>Hello</h1>
+    <header>
+      <div class="logo-menu">
+        <button id="HamBurger">
+          <img src="images/menu.png" alt="menu" class="header-icon" />
+        </button>
+        <img
+          src="images/logo.png"
+          alt="logo"
+          width="1000"
+          height="189"
+          class="Header-item"
+          id="logo"
+        />
+      </div>
+      <nav id="Nav-Bar">
+        <ul class="Header-item">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="index.html#Product-Section">Products</a></li>
+          <li><a href="index.html#Story">Story</a></li>
+        </ul>
+        <button id="Cross-Logo">
+          <img src="images/Cross.png" alt="menu" class="header-icon" />
+        </button>
+      </nav>
+      <input
+        type="text"
+        name="search"
+        id="seach"
+        class="Header-item"
+        placeholder="Search Product.."
+      />
+    </header>
+    <main>
+      <div id="myVideo">
+        <video autoplay muted loop playsinline>
+          <source src="videos/galaxy.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <section id="About-Section">
+        <h2 class="Section-Heading center">About Us</h2>
+        <p>
+          Welcome to TimeKeeper, the pioneers in time travel technology! We are
+          proud to offer you an unparalleled opportunity to step into the past
+          or future with our groundbreaking time travelling watches. Our passion
+          for innovation and relentless pursuit of excellence has led us to
+          create a product that breaks the barriers of space and time, allowing
+          you to explore the infinite possibilities of the universe.
+        </p>
+        <p>
+          At TimeKeeper, our mission is to empower individuals to transcend the
+          limitations of time and space, fostering personal growth, and a deeper
+          understanding of our collective history. We believe that by offering a
+          gateway to different eras, we can inspire creativity, promote cultural
+          exchange, and ignite a passion for learning and discovery.
+        </p>
+        <p>
+          Each of our time travelling watches is meticulously crafted with
+          cutting-edge technology and precision engineering. At the heart of
+          every watch lies a miniaturized wormhole generator, which harnesses
+          quantum mechanics to create stable, traversable wormholes. With a
+          simple twist of the dial, you can set your desired destination in time
+          and embark on an unforgettable journey through the ages.
+        </p>
+        <p>
+          We invite you to take a leap into the unknown and experience the
+          wonders of time travel with TimeKeeper. Together, let's embark on an
+          extraordinary journey that will redefine our understanding of the
+          universe and our place within it. The adventure of a lifetime awaits
+          you – are you ready to embrace the future and explore the past?
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer-container">
+      <div class="newsletter">
+        <span>Newsletter</span>
+        <div class="email">
+          <input type="email" placeholder="Your email" />
+        </div>
+      </div>
+      <div class="social-links">
+        <div class="link">
+          <a href="#"><img src="images/facebook.png" alt="" /></a>
+        </div>
+        <div class="link">
+          <a href="#"><img src="images/insta.png" alt="" /></a>
+        </div>
+        <div class="link">
+          <a href="#"><img src="images/Twitter.png" alt="" /></a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; Copyright, 2023 - TimeKepper</p>
+      </div>
+    </footer>
   </body>
 </html>
