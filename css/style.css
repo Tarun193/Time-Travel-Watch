@@ -268,7 +268,8 @@ header input {
 .Product-operations {
   margin: 1rem;
 }
-.Product-operations button {
+.Product-operations button,
+.btn {
   font-size: 1rem;
   padding: 0.25rem 0.75rem;
   margin: 0.5rem;
@@ -278,7 +279,8 @@ header input {
   transition: all 1s 0.1s;
 }
 
-.Product-operations button:hover {
+.Product-operations button:hover,
+.btn:hover {
   color: black;
   cursor: pointer;
   background-color: white;
@@ -310,6 +312,91 @@ header input {
   font-weight: bold;
   font-style: italic;
   font-size: 0.7em;
+}
+
+/* About Page Styling */
+#About-Section {
+  width: 80%;
+  margin: 1rem auto;
+  background-color: #000000a4;
+  padding: 1rem;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+#About-Section p {
+  margin: 1rem 0;
+  font-size: clamp(16px, 2.5vw, 1rem);
+  line-height: 1.5;
+}
+
+/* Styling Contact us */
+#Contact-Us {
+  background-color: #000000a4;
+  width: 80%;
+  min-height: 90vh;
+  margin: 1rem auto;
+}
+#Contact-Us form label,
+input,
+textarea {
+  font-size: inherit;
+  display: block;
+  width: calc(100% - 1rem);
+  outline: none;
+  margin: 0.5rem;
+  border-radius: 10px;
+  padding: 0.5rem 0.75rem;
+}
+
+#Contact-Us form {
+  margin-top: 2rem;
+}
+
+/* Frequently asked question section */
+#FQ {
+  width: 80%;
+  background-color: #000000a4;
+  margin: 1rem auto;
+  padding: 1rem 0;
+}
+details {
+  border-top: white solid 1px;
+  margin: 0.5rem 0;
+}
+details > summary {
+  list-style: none;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+details > p {
+  margin: 0.5rem;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] summary ~ * {
+  animation: sweep 0.2s ease-in-out;
+  /* animation-iteration-count: infinite; */
+}
+
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 /* Footer CSS */
@@ -346,7 +433,7 @@ header input {
   background-color: transparent;
   border: none;
   outline: none;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .social-links {
@@ -390,23 +477,6 @@ header input {
 
 .center {
   text-align: center;
-}
-
-/* About Page Styling */
-#About-Section {
-  width: 80%;
-  margin: 1rem auto;
-  background-color: #000000a4;
-  padding: 1rem;
-  min-height: 100vh;
-  display: grid;
-  place-content: center;
-}
-
-#About-Section p {
-  margin: 1rem 0;
-  font-size: clamp(16px, 2.5vw, 1rem);
-  line-height: 1.5;
 }
 
 /* Media Quires */
@@ -480,7 +550,9 @@ header input {
     text-align: left;
   }
 
-  #About-Section {
+  #About-Section,
+  #Contact-Us,
+  #FQ {
     width: 95%;
   }
 }
@@ -491,7 +563,7 @@ header input {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 440px) {
   .newsletter {
     flex-direction: column;
   }

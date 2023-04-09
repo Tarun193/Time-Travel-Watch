@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TimeKeeper</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/index.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo-menu">
+        <button id="HamBurger">
+          <img src="images/menu.png" alt="menu" class="header-icon" />
+        </button>
+        <img
+          src="images/logo.png"
+          alt="logo"
+          width="1000"
+          height="189"
+          class="Header-item"
+          id="logo"
+        />
+      </div>
+      <nav id="Nav-Bar">
+        <ul class="Header-item">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="index.html#Product-Section">Products</a></li>
+          <li><a href="index.html#Story">Story</a></li>
+        </ul>
+        <button id="Cross-Logo">
+          <img src="images/Cross.png" alt="menu" class="header-icon" />
+        </button>
+      </nav>
+      <input
+        type="text"
+        name="search"
+        id="seach"
+        class="Header-item"
+        placeholder="Search Product.."
+      />
+    </header>
+    <main>
+      <div id="myVideo">
+        <video autoplay muted loop playsinline>
+          <source src="videos/galaxy.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <section id="Contact-Us">
+        <h2 class="center Section-Heading">Contact Us</h2>
+        <form id="contact-form">
+          <p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </p>
+          <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </p>
+          <p>
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="10"
+              cols="30"
+              required
+            ></textarea>
+          </p>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </section>
+      <section id="FQ">
+        <h2 class="Section-Heading center">Frequently Asked Questions</h2>
+
+        <div>
+          <details>
+            <summary>1. How do I create an account on this website?</summary>
+            <p>
+              To create an account, simply click on the "Sign Up" button located
+              at the top-right corner of the homepage. You will be redirected to
+              a registration form. Fill in the required information and submit
+              the form. You will receive a confirmation email with a link to
+              verify your account. Click on the link to complete the
+              registration process.
+            </p>
+          </details>
+
+          <details>
+            <summary>2. How can I reset my password?</summary>
+            <p>
+              To reset your password, click on the "Forgot Password" link on the
+              login page. Enter your email address, and we will send you an
+              email with instructions on how to reset your password. Make sure
+              to check your spam folder if you don't see the email in your
+              inbox.
+            </p>
+          </details>
+
+          <details>
+            <summary>3. What payment methods do you accept?</summary>
+            <p>
+              We accept all major credit cards, including Visa, MasterCard,
+              American Express, and Discover. Additionally, we accept PayPal and
+              Apple Pay as alternative payment methods. Please note that payment
+              options may vary depending on your location.
+            </p>
+          </details>
+
+          <details>
+            <summary>4. How can I track my order?</summary>
+            <p>
+              Once your order has been shipped, you will receive a confirmation
+              email containing your tracking number. You can use this number to
+              track your package on the courier's website. Alternatively, you
+              can log into your account on our website and check your order
+              status under the "Order History" section.
+            </p>
+          </details>
+
+          <details>
+            <summary>5. What is your return policy?</summary>
+            <p>
+              We offer a 30-day return policy for most items. To initiate a
+              return, please contact our customer support team with your order
+              number and reason for return. They will provide you with a return
+              authorization number and instructions for returning the product.
+              Please note that the item must be in its original condition and
+              packaging to be eligible for a refund.
+            </p>
+          </details>
+
+          <details>
+            <summary>6. How do I contact customer support?</summary>
+            <p>
+              You can contact our customer support team by submitting a request
+              through the "Contact Us" form on our website or by sending an
+              email to support@example.com. We aim to respond to all inquiries
+              within 24-48 hours. Alternatively, you can call us at
+              1-800-123-4567 during our business hours, Monday through Friday, 9
+              AM to 5 PM (Pacific Time).
+            </p>
+          </details>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-container">
+      <div class="newsletter">
+        <span>Newsletter</span>
+        <div class="email">
+          <input type="email" placeholder="Your email" />
+        </div>
+      </div>
+      <div class="social-links">
+        <div class="link">
+          <a href="#"><img src="images/facebook.png" alt="" /></a>
+        </div>
+        <div class="link">
+          <a href="#"><img src="images/insta.png" alt="" /></a>
+        </div>
+        <div class="link">
+          <a href="#"><img src="images/Twitter.png" alt="" /></a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; Copyright, 2023 - TimeKepper</p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Contact Us</h1>
+	</header>
+	<div class="container">
+		<div class="contact-info">
+			<h2>Contact Information:</h2>
+			<p>425 Bloor Street East<br>
+			Toronto ON, Canada<br>
+			Phone: 555-123-4567<br>
+			Email: timekeeper@yahoo.com</p>
+		</div> -->

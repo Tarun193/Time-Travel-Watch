@@ -4,7 +4,6 @@ const images = {
 };
 
 const product_image = document.querySelector("img#product-image");
-console.log(product_image);
 
 const buy_button = document.getElementsByClassName("buy-now");
 
