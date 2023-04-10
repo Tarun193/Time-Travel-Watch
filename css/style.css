@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Roboto&family=Roboto+Condensed&family=Ubuntu&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -8,14 +9,15 @@
 html {
   font-size: 20px;
   scroll-behavior: smooth;
-  font-family: "Edu NSW ACT Foundation", cursive;
-  font-family: "Roboto", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 body {
   min-height: 100%;
   color: white;
 }
+
+/* Styling Header section. */
 
 header {
   display: flex;
@@ -45,6 +47,12 @@ header nav ul a {
   text-decoration: none;
   color: white;
   font-size: clamp(1rem, 2.5vw, 1.1rem);
+  display: inline-block;
+  transition: all 0.5s 0.1s;
+}
+
+header nav ul a:hover {
+  color: rgba(255, 255, 255, 0.797);
 }
 
 .longNav {
@@ -107,6 +115,7 @@ header input {
   margin: 0 0.5rem;
 }
 
+/* Main section styling */
 #myVideo {
   position: fixed;
   top: 0;
@@ -121,6 +130,7 @@ header input {
   min-height: 100vh;
 }
 
+/* Hero section section styling */
 #Hero-Content {
   display: grid;
   place-content: Center;
@@ -133,6 +143,7 @@ header input {
   color: white;
 }
 
+/* Product section styling */
 #Product-Section {
   min-height: 100vh;
   width: 100%;
@@ -202,6 +213,8 @@ header input {
   background-color: black;
   border-bottom-right-radius: 20px;
 }
+
+/* Story Styling */
 #Story {
   background-color: #000000a4;
   max-width: 80%;
@@ -264,6 +277,7 @@ header input {
 
 .Product-Content ul li {
   font-size: clamp(16px, 2.5vw, 1rem);
+  font-family: "Roboto", sans-serif;
 }
 .Product-operations {
   margin: 1rem;
@@ -470,6 +484,9 @@ details[open] summary ~ p {
   color: gold;
 }
 
+p {
+  font-family: "Roboto", sans-serif !important;
+}
 .Section-Heading {
   font-size: clamp(1.3rem, 8vw, 2.5rem);
   margin-bottom: 1rem;
