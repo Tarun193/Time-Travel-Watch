@@ -393,7 +393,7 @@ details summary::-webkit-details-marker {
   display: none;
 }
 
-details[open] summary ~ p {
+.animated-answer[open] p {
   animation: sweep 0.2s ease-in-out;
   /* animation-iteration-count: infinite; */
 }
