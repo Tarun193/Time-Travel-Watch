@@ -379,7 +379,7 @@ details summary::-webkit-details-marker {
   display: none;
 }
 
-details[open] summary ~ * {
+details[open] summary ~ p {
   animation: sweep 0.2s ease-in-out;
   /* animation-iteration-count: infinite; */
 }

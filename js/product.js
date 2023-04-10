@@ -16,4 +16,5 @@ for (let i = 0; i < buy_button.length; i++) {
 }
 
 console.log(localStorage.getItem("image"));
+
 product_image.setAttribute("src", "images/" + localStorage.getItem("image"));
