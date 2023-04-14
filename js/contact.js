@@ -1,59 +1,31 @@
 // Select the form element
 const form = document.getElementById("contact-form");
 
+// checking all required fields
+function checkform(form) {
+  // get all the inputs within the submitted form
+  var inputs = form.getElementsByTagName("input");
+  for (var i = 0; i < inputs.length; i++) {
+    // only validate the inputs that have the required attribute
+    if (inputs[i].hasAttribute("required")) {
+      if (inputs[i].value === "") {
+        // found an empty field that is required
+        alert("Please fill all required fields");
+        return false;
+      }
+    }
+  }
+  return true;
+}
+
 // Add an event listener to the form when it is submitted
 form.addEventListener("submit", (event) => {
   // Prevent the form from submitting
   event.preventDefault();
-
-  // Get the form field values
-  const name = document.getElementById("name").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const message = document.getElementById("message").value.trim();
-
-  // Validate the form field values
-  if (name === "") {
-    // Display an error message for the name field
-    document.getElementById("name-error").textContent =
-      "Please enter your name";
-  } else {
-    // Clear any existing error message for the name field
-    document.getElementById("name-error").textContent = "";
-  }
-
-  if (email === "") {
-    // Display an error message for the email field
-    document.getElementById("email-error").textContent =
-      "Please enter your email";
-  } else if (!validateEmail(email)) {
-    // Display an error message for an invalid email format
-    document.getElementById("email-error").textContent =
-      "Please enter a valid email";
-  } else {
-    // Clear any existing error message for the email field
-    document.getElementById("email-error").textContent = "";
-  }
-
-  if (message === "") {
-    // Display an error message for the message field
-    document.getElementById("message-error").textContent =
-      "Please enter a message";
-  } else {
-    // Clear any existing error message for the message field
-    document.getElementById("message-error").textContent = "";
-  }
-
-  // If there are no error messages, submit the form
-  if (name !== "" && email !== "" && validateEmail(email) && message !== "") {
-    form.submit();
-  }
+  checkform(form);
+  alert("Thanks for Your Message");
+  form.submit();
 });
-
-// Function to validate email format
-function validateEmail(email) {
-  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  return re.test(email);
-}
 
 // Animation for FQ
 const answers = document.getElementsByClassName("animated-answer");
