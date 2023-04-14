@@ -397,7 +397,7 @@ details summary::-webkit-details-marker {
   animation: sweep 0.2s ease-in-out;
   /* animation-iteration-count: infinite; */
 }
-
+/* Animation for F and Qs */
 @keyframes sweep {
   0% {
     opacity: 0;
@@ -491,7 +491,10 @@ p {
   font-size: clamp(1.3rem, 8vw, 2.5rem);
   margin-bottom: 1rem;
 }
-
+.price {
+  margin: 0 1rem;
+  margin-top: 0.5rem;
+}
 .center {
   text-align: center;
 }
